@@ -1,0 +1,10 @@
+<div id="container" ng-controller='TwoWayBind'>
+  <div class="row" ng-repeat="data in profile_pictures">
+    <div class=".col-sm-6 .col-md-5 .col-lg-6" style="background-color:#eee;height:150px;width:500px;margin-left:240px;margin-top:20px;">
+      <h4 style="padding:10px;">User Comment</h4><hr>
+      <p style="padding:10px;">Sample Feed comment would be here. Yay!
+      </p>
+      <img src="{{data.profile_picture}}" class="img-circle" style="width:100px;height:100px;margin-left:-140px;margin-top:-130px;">
+    </div>
+  </div>
+</div>

@@ -31,6 +31,11 @@ angular
         controller: 'AboutCtrl',
         controllerAs: 'about'
       })
+      .when('/twowaybind', {
+        templateUrl: 'views/twowaybind.html',
+        controller: 'TwoWayBind',
+        controllerAs: 'twowaybind'
+      })
       .otherwise({
         redirectTo: '/'
       });
