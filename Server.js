@@ -27,9 +27,10 @@ app.listen(3000, function () {
   console.log("Express server started on PORT 3000");
 });
 
-
+app.use(express.static('app'));
+app.use('/bower_components', express.static('bower_components'));
 app.get('/', function (req, res) {
-  res.sendfile('index.html');
+  res.sendfile('app/index.html');
 });
 /*
  * Here we will call Database.
